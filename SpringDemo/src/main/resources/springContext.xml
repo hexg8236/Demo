@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="bookDao" class="com.newhand.dao.impl.BookDaoImpl"/>-->
+<!--    <bean id="bookService" class="com.newhand.service.impl.BookServiceImpl" scope="singleton">-->
+<!--        <property name="bookDao" ref="bookDao"/>-->
+<!--    </bean>-->
+
+<!--    静态工厂获取实例-->
+<!--    <bean id="bookDao" class="com.newhand.factory.StaticBookFactory" factory-method="getBookDao"/>-->
+
+<!--    实例工厂 获取实例-->
+<!--    <bean id="instanceBookFactory" class="com.newhand.factory.InstanceBookFactory"/>-->
+<!--    <bean id="bookDao" factory-bean="instanceBookFactory" factory-method="getBookDao"/>-->
+
+<!--    使用BeanFactory 获取实例-->
+<!--    <bean id="bookDao" class="com.newhand.factory.MyBeanFactory"/>-->
+
+<!--    使用Set方法注入-->
+<!--    <bean id="bookDao" class="com.newhand.dao.impl.BookDaoImpl"/>-->
+<!--    <bean id="bookService" class="com.newhand.service.impl.BookServiceImpl">-->
+<!--        <property name="bookDao" ref="bookDao"/>-->
+<!--        <property name="number" value="10"/>-->
+<!--    </bean>-->
+
+<!--    使用构造函数注入-->
+<!--        <bean id="bookDao" class="com.newhand.dao.impl.BookDaoImpl"/>-->
+<!--        <bean id="bookService" class="com.newhand.service.impl.BookServiceImpl">-->
+<!--            <constructor-arg name="bookDao" ref="bookDao"/>-->
+<!--            <constructor-arg name="number" value="20"/>-->
+<!--        </bean>-->
+
+<!--        <bean id="resourceService" class="com.newhand.service.impl.ResourceServiceImpl">-->
+<!--            <property name="array">-->
+<!--                <array>-->
+<!--                    <value>array1</value>-->
+<!--                    <value>array2</value>-->
+<!--                    <value>array3</value>-->
+<!--                </array>-->
+<!--            </property>-->
+<!--            <property name="list">-->
+<!--                <list>-->
+<!--                    <value>list1</value>-->
+<!--                    <value>list2</value>-->
+<!--                    <value>list3</value>-->
+<!--                    <value>list4</value>-->
+<!--                </list>-->
+<!--            </property>-->
+<!--            <property name="set">-->
+<!--                <set>-->
+<!--                    <value>value1</value>-->
+<!--                    <value>value1</value>-->
+<!--                    <value>value1</value>-->
+<!--                    <value>value2</value>-->
+<!--                    <value>value3</value>-->
+
+
+<!--                </set>-->
+<!--            </property>-->
+<!--            <property name="map">-->
+<!--                <map>-->
+<!--                    <entry key="key1" value="value1"/>-->
+<!--                    <entry key="key2" value="value2"/>-->
+<!--                    <entry key="key3" value="value3"/>-->
+<!--                </map>-->
+<!--            </property>-->
+<!--            <property name="properties">-->
+<!--                <props>-->
+<!--                    <prop key="proKey1">value1</prop>-->
+<!--                    <prop key="proKey2">value2</prop>-->
+<!--                    <prop key="proKey3">value3</prop>-->
+<!--                </props>-->
+<!--            </property>-->
+<!--        </bean>-->
+<!--    <bean id="bookDao" name="bookDao" class="com.newhand.dao.impl.BookDaoImpl" />-->
+</beans>
