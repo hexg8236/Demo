@@ -2,10 +2,7 @@ package top.newhand.controller;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import top.newhand.pojo.User;
 
 import java.util.Arrays;
@@ -25,7 +22,7 @@ import java.util.Map;
 public class UserController {
 
 
-    @RequestMapping(value = "/save", method = RequestMethod.GET)
+    @RequestMapping(value = "/save")
     @ResponseBody
     public String save(@RequestParam("name") String username, Integer age) {
         System.out.println("Name:" + username);
@@ -80,7 +77,7 @@ public class UserController {
 
     @RequestMapping("/dateParam")
     @ResponseBody
-    public String dateParam(Date date, @DateTimeFormat(pattern = "yyyy-mm-dd") Date date2, @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss") Date date3 ) {
+    public String dateParam(Date date,@DateTimeFormat(pattern = "yyyy-MM-dd")Date date2,@RequestParam @DateTimeFormat(pattern = "yyyy/MM/dd HH:mm:ss")Date date3 ) {
         System.out.println("date:" + date);
         System.out.println("date2:" + date2);
         System.out.println("date3:" + date3);
