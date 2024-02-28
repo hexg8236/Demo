@@ -12,6 +12,8 @@
         <module name="SpringMvcDemo" />
         <module name="HelloDemo" />
         <module name="SpringBootDemo" />
+        <module name="order-service" />
+        <module name="user-service" />
         <module name="SpringAopDemo" />
       </profile>
     </annotationProcessing>
@@ -19,6 +21,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringBootDemo" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
     </option>
   </component>
 </project>
