@@ -15,3 +15,7 @@ spring:
             - Path=/user/** # 这个是按照路径匹配，只要以/user/开头就符合要求
           filters:
             - AddRequestHeader=Truth, NewHand is freaking awesome!
+        - id: order-service
+          uri: lb://orderservice
+          predicates:
+            - Path=/order/**
