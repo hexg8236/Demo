@@ -3,6 +3,7 @@ package top.newhand.config;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 
@@ -13,6 +14,7 @@ import javax.sql.DataSource;
  * @Version 1.0
  * @Description TODO
  **/
+@Configuration
 public class MybatisConfig {
     //由于SqlSessionFactoryBean是Mybatis的核心对象，且无状态，创建一次即可，则交由SpringIoc容器管理即可
     //其他Mapper以及实体对象以及有状态对象不建议SpringIoc容器管理，除非特殊对象
