@@ -1,4 +1,4 @@
-package cn.itcast.user.pojo;
+package top.newhand.user.pojo;
 
 import lombok.Data;
 

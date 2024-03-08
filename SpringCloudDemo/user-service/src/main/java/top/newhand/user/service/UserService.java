@@ -1,7 +1,7 @@
-package cn.itcast.user.service;
+package top.newhand.user.service;
 
-import cn.itcast.user.mapper.UserMapper;
-import cn.itcast.user.pojo.User;
+import top.newhand.user.mapper.UserMapper;
+import top.newhand.user.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

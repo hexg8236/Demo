@@ -1,6 +1,6 @@
-package cn.itcast.user.mapper;
+package top.newhand.user.mapper;
 
-import cn.itcast.user.pojo.User;
+import top.newhand.user.pojo.User;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
