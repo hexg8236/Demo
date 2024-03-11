@@ -19,3 +19,8 @@ spring:
           uri: lb://orderservice
           predicates:
             - Path=/order/**
+feign:
+  client:
+    config:
+      userservice: # 针对某个微服务的配置
+        loggerLevel: FULL #  日志级别

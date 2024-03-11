@@ -9,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/SpringAopDemo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBootDemo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudDemo/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloudDemo/feign-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudDemo/gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudDemo/order-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudDemo/src/main/java" charset="UTF-8" />
