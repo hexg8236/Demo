@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/SpringMybatisDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringAnnotationDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCloudDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringElkDemo/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

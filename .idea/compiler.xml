@@ -9,16 +9,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="SpringAnnotationDemo" />
         <module name="SpringDemo" />
-        <module name="SpringMybatisDemo" />
         <module name="SpringMvcDemo" />
         <module name="HelloDemo" />
         <module name="SpringBootDemo" />
-        <module name="order-service" />
         <module name="user-service" />
         <module name="SpringAopDemo" />
         <module name="eureka-server" />
-        <module name="gateway" />
         <module name="feign-api" />
+        <module name="SpringElkDemo" />
+        <module name="SpringMybatisDemo" />
+        <module name="order-service" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
   </component>
