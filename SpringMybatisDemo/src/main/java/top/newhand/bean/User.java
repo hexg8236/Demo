@@ -1,18 +1,9 @@
 package top.newhand.bean;
-
 import java.util.Date;
-
-/**
- * @ClassName User
- * @Author HeXianGang
- * @Date 2024/3/8 20:04
- * @Version 1.0
- * @Description 用户实体类
- **/
 
 public class User {
     private Integer id;
-    private String username;
+    private String userName;
     private Date birthday;
     private String sex;
     private String address;
@@ -22,7 +13,7 @@ public class User {
 
     public User(Integer id, String username, Date birthday, String sex, String address) {
         this.id = id;
-        this.username = username;
+        this.userName = username;
         this.birthday = birthday;
         this.sex = sex;
         this.address = address;
@@ -37,11 +28,11 @@ public class User {
     }
 
     public String getUsername() {
-        return username;
+        return userName;
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.userName = username;
     }
 
     public Date getBirthday() {
@@ -72,11 +63,10 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", username='" + username + '\'' +
+                ", username='" + userName + '\'' +
                 ", birthday=" + birthday +
                 ", sex='" + sex + '\'' +
                 ", address='" + address + '\'' +
                 '}';
     }
 }
-

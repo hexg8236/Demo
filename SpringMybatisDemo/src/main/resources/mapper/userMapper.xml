@@ -7,7 +7,19 @@
         查询语句
         resultType：返回的实体类的类型，类全名
     -->
-    <select id="findAllUsers" resultType="com.itheima.sh.pojo.User">
-        select * from user
+    <select id="findAllUsers" resultType="User">
+        select *
+        from user
     </select>
+
+    <select id="findUserById" resultType="User">
+        select *
+        from user
+        where id = ${id}
+    </select>
+
+    <insert id="saveUser">
+        insert into user
+        values (null, #{username}, #{birthday}, #{sex}, #{address})
+    </insert>
 </mapper>

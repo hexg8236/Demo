@@ -20,4 +20,15 @@ public interface UserMapper {
      * @Date 20:04 2024/3/8
      **/
     List<User> findAllUsers();
+
+    User findUserById(Integer id);
+
+    //添加
+    void saveUser(User user);
+
+    //修改
+    void updateUser(User user);
+
+    //根据id删除
+    void deleteUser(Integer id);
 }

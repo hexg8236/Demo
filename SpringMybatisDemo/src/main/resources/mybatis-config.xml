@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="jdbc.properties"/>
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <typeAliases>
+        <!--扫描com.itheima.sh.pojo包下所有的类，类名直接作为别名(别名不区分大小写)-->
+        <package name="top.newhand.bean"/>
+    </typeAliases>
+    <!--mybatis环境的配置-->
+    <environments default="development">
+        <!--通常我们只需要配置一个就可以了， id是环境的名字 -->
+        <environment id="development">
+            <!--事务管理器：由JDBC来管理-->
+            <transactionManager type="JDBC"/>
+            <!--数据源的配置：mybatis自带的连接池-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="com.mysql.jdbc.Driver"/>-->
+<!--                <property name="url" value="jdbc:mysql://localhost:13306/demo_db"/>-->
+<!--                <property name="username" value="root"/>-->
+<!--                <property name="password" value="Aa123456"/>-->
+<!--            </dataSource>-->
+        </environment>
+
+
+        <!--通常我们只需要配置一个就可以了， id是环境的名字 -->
+        <environment id="test">
+            <!--事务管理器：由JDBC来管理-->
+            <transactionManager type="JDBC"/>
+            <!--数据源的配置：mybatis自带的连接池-->
+            <dataSource type="POOLED">
+                <!--
+                    这里的value="${driver}"  driver 是子标签property的name属性值
+                -->
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="jdbc:mysql://localhost:13306/demo_db"/>
+                <property name="username" value="root"/>
+                <property name="password" value="Aa123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!--加载映射文件,放到src下即可-->
+        <mapper resource="mapper/userMapper.xml"/>
+    </mappers>
+</configuration>
