@@ -17,6 +17,7 @@
         <module name="eureka-server" />
         <module name="feign-api" />
         <module name="SpringElkDemo" />
+        <module name="SpringChatGptDemo" />
         <module name="SpringMybatisDemo" />
         <module name="order-service" />
         <module name="gateway" />

@@ -1,0 +1,6 @@
+# 屏蔽目录下的文件
+/*/target/
+/*/.idea/
+/*/*/.idea/
+/*/*/target/
+.idea/

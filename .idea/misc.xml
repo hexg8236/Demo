@@ -4,6 +4,12 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FindBugsConfigurable">
+    <option name="make" value="true" />
+    <option name="effort" value="default" />
+    <option name="priority" value="Medium" />
+    <option name="excludeFilter" value="" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -16,11 +22,15 @@
         <option value="$PROJECT_DIR$/SpringAnnotationDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCloudDemo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringElkDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringChatGptDemo/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SuppressionsComponent">
+    <option name="suppComments" value="[]" />
   </component>
 </project>
